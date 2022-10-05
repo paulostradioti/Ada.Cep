@@ -1,15 +1,15 @@
-﻿using Ada.Cep.Domain;
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
+using Ada.Cep.Domain;
 
 namespace Ada.Cep.Service.ApiClient
 {
     public class CepApiClient : ICepApiClient
     {
-        private static readonly HttpClient _httpClient = new();
+        private readonly HttpClient _httpClient;
 
-        static CepApiClient()
+        public CepApiClient(HttpClient httpClient)
         {
-            _httpClient.BaseAddress = Constants.Cep.CepApiBaseUrl;
+            _httpClient = httpClient;
         }
 
         public async Task<Address> GetAsync(string cep)
