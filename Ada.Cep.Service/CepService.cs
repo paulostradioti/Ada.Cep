@@ -22,7 +22,7 @@ namespace Ada.Cep.Service
             if (address == null)
             {
                 address = await _apiClient.GetAsync(cep);
-                await _cache.AddAddressAsync(address);
+                _cache.AddAddressAsync(address);
             }
 
             return address;

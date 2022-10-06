@@ -11,7 +11,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include="Ada.Cep.Unittests" />
+		<InternalsVisibleTo Include="Ada.Cep.UnitTests" />
 	</ItemGroup>
 
 </Project>

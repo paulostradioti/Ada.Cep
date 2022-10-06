@@ -1,6 +1,8 @@
+using System.Reflection.Metadata;
 using Ada.Cep.Service;
 using Ada.Cep.Service.ApiClient;
 using Ada.Cep.Service.Cache;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Ada.Cep.Api
@@ -21,7 +23,12 @@ namespace Ada.Cep.Api
 
             builder.Services.AddTransient<ICepApiClient, CepApiClient>();
             builder.Services.AddTransient<ICepCacheService, CepCacheService>();
-            builder.Services.AddTransient<ICepService>();
+            builder.Services.AddTransient<ICepService, CepService>();
+
+            builder.Services.AddSingleton(new HttpClient
+            {
+                BaseAddress = Constants.Cep.CepApiBaseUrl
+            });
 
             var app = builder.Build();
 

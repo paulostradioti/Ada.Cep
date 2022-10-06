@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ada.Cep.Service", "Ada.Cep.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ada.Cep.Domain", "Ada.Cep.Domain\Ada.Cep.Domain.csproj", "{F4F79427-728C-4D68-AE29-955068120550}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ada.Cep.Unittests", "Ada.Cep.Unittests\Ada.Cep.Unittests.csproj", "{EAFF14AD-FCD0-49B3-8D15-C73F23D82ACC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ada.Cep.UnitTests", "Ada.Cep.Unittests\Ada.Cep.UnitTests.csproj", "{EAFF14AD-FCD0-49B3-8D15-C73F23D82ACC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ada.Cep.IntegrationTests", "Ada.Cep.IntegrationTests\Ada.Cep.IntegrationTests.csproj", "{7F667E52-F68F-41F2-BF61-42FABC6555E8}"
 EndProject

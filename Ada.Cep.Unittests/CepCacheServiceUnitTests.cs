@@ -1,7 +1,7 @@
 using Ada.Cep.Domain;
 using RichardSzalay.MockHttp;
 
-namespace Ada.Cep.Unittests
+namespace Ada.Cep.UnitTests
 {
     public class CepCacheServiceUnitTests : CepCacheServiceUnitTestsBase
     {
