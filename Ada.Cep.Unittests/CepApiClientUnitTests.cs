@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
-using Ada.Cep.Domain;
-using Ada.Cep.Service;
+﻿using Ada.Cep.Domain;
 using Ada.Cep.Service.ApiClient;
+using Ada.Cep.UnitTests.Base;
 using FluentAssertions;
-using Newtonsoft.Json;
-using RichardSzalay.MockHttp;
-using JsonSerializer = System.Text.Json.JsonSerializer;
+using System.Text.Json;
 
 namespace Ada.Cep.UnitTests
 {
@@ -28,7 +20,7 @@ namespace Ada.Cep.UnitTests
             var sut = new CepApiClient(MockHttpClient);
 
             // Act
-            var response = await sut.GetAsync("15840000");
+            var response = await sut.GetAsync("15050305");
 
             //Assert
             response.Should().BeEquivalentTo(expected);

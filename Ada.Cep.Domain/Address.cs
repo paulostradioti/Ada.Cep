@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Ada.Cep.Domain
+﻿namespace Ada.Cep.Domain
 {
     public class Address
     {

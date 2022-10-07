@@ -1,9 +1,6 @@
-using System.Reflection.Metadata;
 using Ada.Cep.Service;
 using Ada.Cep.Service.ApiClient;
 using Ada.Cep.Service.Cache;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Ada.Cep.Api
 {

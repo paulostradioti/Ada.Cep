@@ -3,7 +3,7 @@ using Ada.Cep.Service;
 using Ada.Cep.Service.Cache;
 using RichardSzalay.MockHttp;
 
-namespace Ada.Cep.UnitTests;
+namespace Ada.Cep.UnitTests.Base;
 
 public class CepCacheServiceUnitTestsBase
 {
@@ -13,7 +13,7 @@ public class CepCacheServiceUnitTestsBase
     public HttpClient MockHttpClient => _httpClient;
 
     private static HttpClient _httpClient = new HttpClient(CreateNewMockMesssageHandler())
-        { BaseAddress = Constants.Cep.CepApiBaseUrl };
+    { BaseAddress = Constants.Cep.CepApiBaseUrl };
 
     private static Address _address = new()
     {

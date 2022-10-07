@@ -1,5 +1,5 @@
 using Ada.Cep.Domain;
-using RichardSzalay.MockHttp;
+using Ada.Cep.UnitTests.Base;
 
 namespace Ada.Cep.UnitTests
 {
